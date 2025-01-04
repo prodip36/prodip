@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'data_analysis',
     'deep_learning',
     'about_us',
+    'home',
+    'blog',
 ]
 
 MIDDLEWARE = [
