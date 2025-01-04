@@ -1,10 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 # Create your views here.
 def machine_learn(request):
-    return HttpResponse('<h2>This a simple django project. Now i can create a django server.</h2>')
-
-def deep_learning(request):
-    return HttpResponse('This is another http response.')
-def about_me(request):
-    return HttpResponse('<h3>Name:Prodip sarker <br>Dist:Tangail</h3>')
+    return render(request,'machine_learning.html')

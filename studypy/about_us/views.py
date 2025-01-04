@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render
 # Create your views here.
 def about(request):
-    return HttpResponse('<h1>Hey we are developing a django projects.</h1><br>cont@ct us: +8801860931442<br>all rights reserved.')
+    return render(request,'about_us.html')
