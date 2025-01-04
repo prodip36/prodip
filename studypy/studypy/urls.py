@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from machine_learning import views
+from blog import views as b
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.machine_learning),
     path('dl/',views.deep_learning),
-    path('about/',views.about_me)
+    path('about/',views.about_me),
+    path('blog1/',b.blog1)
 ]
