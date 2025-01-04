@@ -3,7 +3,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 # Create your views here.
 def machine_learn(request):
-    return render(request,'machine_learning/machine_learning.html')
+    #django variables
+    name='Prodip Sarker'
+    age=25
+    dist='Tangail'
+    uni= 'Mbstu'
+    phn='+8801860931442'
+    offering = {'name':name,'age':age,'dist':dist,'uni':uni,'phn':phn}
+    return render(request,'machine_learning/machine_learning.html',context=offering)
 
 def knn(request):
     return render(request,'machine_learning/knn.html')
