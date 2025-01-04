@@ -20,4 +20,6 @@ from machine_learning import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.machine_learning),
+    path('dl/',views.deep_learning),
+    path('about/',views.about_me)
 ]
