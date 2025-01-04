@@ -4,4 +4,4 @@ from django.shortcuts import render
 # Create your views here.
 
 def data_ana(request):
-    return render(request,'data_analysis.html')
+    return render(request,'data_analysis/data_analysis.html')
