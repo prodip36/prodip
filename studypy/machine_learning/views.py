@@ -10,7 +10,8 @@ def machine_learn(request):
     uni= 'Mbstu'
     phn='+8801860931442'
     offering = {'name':name,'age':age,'dist':dist,'uni':uni,'phn':phn}
-    return render(request,'machine_learning/machine_learning.html',context=offering)
+    phone= {'names':['I-phone','Samsung','Vivo','Xiomi','Oppo','Motorola']}
+    return render(request,'machine_learning/machine_learning.html',context=phone)
 
 def knn(request):
     return render(request,'machine_learning/knn.html')

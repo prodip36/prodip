@@ -8,10 +8,21 @@
 <body>
     <h2>This a simple django project. Now i can create a django server.This is from HTML file.</h2>
     <h2>Here is my intro..</h2>
-    <h4>My name is: {{name}}</h4>
+    <h4>My name is: {{name|upper}}</h4>
     <h4>My age is: {{age}}</h4>
-    <h4>Dist: {{dist}}</h4>
-    <h4>University: {{uni}}</h4>
+    <h4>Dist: {{dist|upper}}</h4>
+    <h4>University: {{uni|upper}}</h4>
     <h4>Phone: {{phn}}</h4>
+    <p>length of dist is {{dist|length}}</p>
+
+    {% if phn %}
+    <h4>Thank you for adding phone number.</h4>
+    {% else %}
+    <h4>Please add phone number.</h4>
+    {% endif %}
+    <h3>Mobile Phone Brand</h3>
+    {% for nm in names  %} 
+    {{forloop.counter}}.{{nm}}<br>
+    {% endfor %}
 </body>
 </html>
